@@ -1,0 +1,162 @@
+
+
+// li.red {}:  Any li, with class of red i.e., li class ="red"
+// .class1.class2{}: Any element with both classes i.e., div class =" cl1 cl2"
+
+//  ul li{} : All of the li inside the ul
+//  div .red : All the .red class inside of a div
+
+.page-content.portfolio-page
+{
+  background-image: url("/assets/img/bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.profile {
+  text-align: justify;
+}
+
+
+.profile .header{
+  background-color: powderblue;
+  background-image: -webkit-linear-gradient(130deg, #948d8e 20%, #d9d4cc 60%);
+  color: firebrick;
+}
+
+.profile hr{
+  border: 10px solid lightslategray;
+  border-radius: 50px;
+}
+
+.section{
+  background-color: lightsilver;
+}
+
+.section h3{
+  color: #D84339;
+  text-align: left;
+  position: relative;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 30px;
+}
+
+.profile .content {
+  text-align: left;
+  margin: -10px 20px 20px 25px;
+  padding: 20px 10px 20px 10px;
+  border-radius: 25px;
+  background: #E1EBEE;
+}
+
+.profile hr{
+  color: E9896A;
+}
+
+.content .content_entry{
+  background-color: #eee;
+  color: #444;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+}
+
+.header .picture{
+  max-width: 35%;
+  max-height: 35%;
+  padding: 1em;
+  display: inline-block;
+  margin-right:8%;
+}
+//
+.header .picture img {
+  border-radius: 65%; // Make the image rounded
+}
+
+.header .info{
+  max-width: 65%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black0
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+// /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.collapsible_body {
+  padding: 0px 18px;
+  margin-bottom: 10px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}

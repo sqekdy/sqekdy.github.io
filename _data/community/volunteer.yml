@@ -1,0 +1,65 @@
+- name: Microsoft TEALS
+  location: North Dakota High School, ND, US
+  position:
+    - Teacher
+  from: July 2020
+  to: June 2021
+  logo_rpath: microsoft.png
+  gallery: assets/img/teals
+  description:
+    - Taught Python Programming for a class size of 13 students, every working day for the given
+      school year. This class helped students, to gain experience with potential career in Computer Science
+      and the future of technology.
+
+
+- name: Power in Diversity Leadership Conference
+  location: SCSU, St Cloud , US
+  position:
+    - Global Ambassador
+  from: 2019
+  to: 2020
+  logo_rpath: stcloudstate.png
+  gallery:
+  description:
+    - Represented St. Cloud State in annual "Power in Diversity" leadership conference program,
+      by welcoming guest speakers and helped familiarize employers to campus environment, on diversity
+      job and internship fair.
+
+- name: Nepalese Student Association
+  location: SCSU, St Cloud , US
+  position:
+    - General Member
+    - Peer Advisor
+  from: 2019
+  to: 2021
+  logo_rpath: nsa.png
+  gallery:
+  description:
+    - Volunteered and participated on the biggest event i.e., Nepal Cultural Night, in St. Cloud State University.
+
+
+- name: Rotaract Club of RGIT
+  location: Bangalore, India
+  position:
+    - Volunteer
+  from:
+  to: 2015
+  logo_rpath: rcrgit.png
+  gallery:
+  description:
+    - Joined a group of 15 people, to visit schools in remote areas of Bangalore, India.
+      We contributed among other things, several water-filters for safe drinking water to
+      the students and community.
+
+
+- name: Red Cross, Nepal
+  location: Nepal
+  position:
+    - Blood Donor
+  from:
+  to:
+  logo_rpath: rc.png
+  gallery:
+  description:
+    - Actively participated in blood donation program, to donate blood for a total of 5 times.
+      The contribution has helped, successful operation of a heart patient.

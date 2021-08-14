@@ -1,0 +1,43 @@
+# This document is used to fetch all the certification in the portfolio page
+
+- name: Neural Networks and Deep Learning
+  issued_date: Mar 2020
+  issuing_entity: Coursera
+  expiration: No expiration
+  certf_url: https://www.coursera.org/account/accomplishments/verify/6ZVGSCSF8SFN
+
+- name: Python for Data Science
+  issued_date: Nov 2018
+  issuing_entity: IBM
+  expiration: No expiration
+  certf_url: https://www.credly.com/badges/1fc8d817-5f06-4f93-8456-666f2fed6d69
+
+- name: Getting Started with Containers on IBM Cloud
+  issued_date: Nov 2018
+  issuing_entity: IBM
+  expiration: No expiration
+  certf_url: https://www.credly.com/badges/9e3dd829-9841-433a-ac25-d64d4437e441
+
+- name: Data Science Foundations-Level 1
+  issued_date: Nov 2018
+  issuing_entity: IBM
+  expiration: No expiration
+  certf_url: https://www.credly.com/badges/26a4588b-e3de-48a0-a351-2bd663ea7708/
+
+- name: IBM Agile Explorer
+  issued_date: Dec 2017
+  issuing_entity: IBM
+  expiration: No expiration
+  certf_url: https://www.credly.com/badges/f59db4cb-e637-4947-b635-32fb5dc3ffd5/
+  
+- name: Cognitive Practitioner
+  issued_date: Sep 2017
+  issuing_entity: IBM
+  expiration: No expiration
+  certf_url: https://www.credly.com/badges/5de19703-3850-4cf9-b66a-a6433d6b8583
+
+- name: Blockchain Essentials
+  issued_date: Jul 2017
+  issuing_entity: IBM
+  expiration: No expiration
+  certf_url: https://www.youracclaim.com/badges/8416c7ba-caf2-47c1-bbd9-b733419ca7ab

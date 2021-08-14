@@ -1,0 +1,189 @@
+---
+layout: default
+profileClass: portfolio-page
+---
+
+<script type="text/javascript" src="{{ base.url | prepend: site.url }}/assets/js/collapseContent.js"></script>
+{%assign org_logo_path = "/assets/img/org_icon/"%}
+
+
+<div class="profile">
+  <div class = "section header">
+    <div class="picture">
+          <img src="/assets/img/sample_profile.png" alt="Avatar">
+    </div>
+    <div class= "info" >
+      <h4><b>Current Organization:</b> <span style="color:white;"><i> St. Cloud State University</i></span> </h4>
+      <h4><b>Designation:</b> <span style="color:white"><i> Student/ Graduate Teaching Assistant</i> </span> </h4>
+      <h4><b>Role Since:</b> <span style="color:white"> <i> Aug 2019</i> </span> </h4>
+    </div>
+  </div>
+  <br><br><hr><br><br>
+
+
+  <div class="section summary">
+    <h3> Summary </h3></br>
+    <div class="content">
+      <div style="color:firebrick"> Actively seeking role in Software Development. </div>
+      <br>
+      <p style="text-align:justify;color:#404040;font-family: Helvetica, sans-serif;"">
+        Sandip is a professional Software Developer with over 3 years of
+        experience in the field of software development and information technology.
+        He is well-versed in theoretical knowledge as well as practical experience in
+        architecting, designing, developing and maintaining software products using
+        industry accredited Agile Methodology. He is an enthusiastic problem-solver
+        with the mission, that of an ethical and encouraging leader.
+        <br><br>
+
+        Sandip, has very high regard for mentor-mentee relationship, and therefore has been
+        a mentor for several other students and peers throughout his career. He has given
+        over 20 technical presentations in professional setting, and countless
+        tutoring to people, as requested by the individuals and groups in and outside of his network.
+      </p>
+    </div>
+        <br>
+  </div>
+  <br><br><hr><br><br>
+
+
+  <div class="section expertise">
+    <h3> Expertise </h3></br>
+    <div class = "content">
+        <div style="display:inline-block;">
+          {% for tech in site.static_files %}
+            {% if tech.path contains 'assets/img/expertise' %}
+              <div class="tooltip">
+                <img class= "tooltip" src = "{{ tech.path }}" alt ="{{tech.basename}}">
+                <span class="tooltiptext"> {{tech.basename}} </span>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <br>
+  </div>
+
+  <br><br><hr><br><br>
+
+  <div class="section certification">
+    <h3> Certifications </h3></br>
+    <div class="content">
+      {% for each_certification in site.data.certifications.certf %}
+          <button class="collapsible">
+            <span style="color:darkgreen;">{{ each_certification.name }} </span>,
+            <span style="color:darkslateblue;">{{ each_certification.issued_date }} </span>
+          </button>
+
+          <div class= "collapsible_body"> <br/>
+            <ul>
+              <li> Issuing Entity: {{ each_certification.issuing_entity }} </li>
+              <li> Expiration: {{ each_certification.expiration }} </li>
+              <li> <a href = {{ each_certification.certf_url }} > Verify Credential </a> </li>
+            </ul>
+          </div>
+      {% endfor %}
+    </div>
+    <br>
+  </div>
+
+  <br><br><hr><br><br>
+
+
+  <div class="section organizations">
+    <h3> Organizations </h3><br>
+      <div class="content">
+        {% for each_org in site.data.organizations.org %}
+            <button class="collapsible" style="display:inline-block;">
+              <img src = "{{ base.url | prepend: site.url }}{{org_logo_path}}{{each_org.logo_rpath}}"
+              , alt=""
+              , style="width:50px;height:50px;">
+              <span style="color:darkgreen;">{{ each_org.name }} </span>,
+              <span style="color:darkslateblue;">{{ each_org.from }} - {{each_org.to}} </span>
+            </button>
+
+            <div class= "collapsible_body"><br>
+              <ul>
+              {% for org_pos in each_org.position %}
+                <li style="display:inline;margin-right:50px;color:darkslateblue;">&bull; {{ org_pos }} </li>
+              {% endfor %}
+              </ul>
+
+              <ul>
+              {% for org_desc in each_org.description %}
+              <br>
+              <li style="margin-left:30px;">{{org_desc}} </li>
+              {% endfor %}
+              </ul>
+
+            </div>
+        {% endfor %}
+      </div>
+      <br>
+  </div>
+  <br><br><hr><br><br>
+
+  <div class="section research">
+    <h3> Research and Publications </h3></br>
+      <div class="content">
+        {% for each_research in site.data.research.publication %}
+          <div class="content_entry">
+            <div style="float:left;"> {{ each_research.name }} </div>
+            <div style="float:right;color:darkslateblue;"> {{each_research.publish_date}}</div>
+            <br>
+            <a href = {{ each_research.publish_url }} style="font-size:14px" > See Publication </a>
+          </div>
+          <br>
+        {% endfor %}
+      </div>
+  <br>
+  </div>
+  <br><br><hr><br><br>
+
+
+  <div class="section volunteer">
+    <h3> Giving back to community</h3></br>
+        <div class="content">
+          {% for each_vr in site.data.community.volunteer %}
+              <button class="collapsible" style="display:inline-block;">
+                <img src = "{{ base.url | prepend: site.url }}{{org_logo_path}}{{each_vr.logo_rpath}}"
+                , alt=""
+                , style="width:50px;height:50px;">
+                <span style="color:darkgreen;">{{ each_vr.name }} </span>,
+                <span style="color:darkslateblue;">{{ each_vr.from }} - {{each_vr.to}} </span>
+              </button>
+
+              <div class= "collapsible_body"><br>
+                <ul>
+                {% for org_pos in each_vr.position %}
+                  <li style="display:inline;margin-right:50px;color:darkslateblue;">&bull; {{ org_pos }} </li>
+                {% endfor %}
+                </ul>
+
+                <ul>
+                {% for vr_desc in each_vr.description  %}
+                <br>
+                <li style="margin-left:30px;">{{vr_desc}} </li>
+                {% endfor %}
+                </ul>
+
+                {% for gall in site.static_files %}
+                  {% if gall.path contains each_vr.gallery  %}
+                  <img style="display:inline-block;margin-left:30px;" src="{{ gall.path }}" alt="" >
+                  <br><br>
+                  {% endif %}
+                {% endfor %}
+
+              </div>
+          {% endfor %}
+        </div>
+        <br>
+  </div>
+  </br></br><hr></br></br>
+
+<p style="color:#888888;"> Disclaimer: <i> All logos used in this website are the registered trademark
+  of the respective organizations. I do not own digital assets of any organization
+  used in this website and, the use of these assets are solely for the purpose of
+   depicting my involvement </i>. </p>
+<p style="color:#888888;"><i> Background, courtesy of <a href="http://www.freepik.com">Designed by Freepik</a> </i></p>
+
+</div>

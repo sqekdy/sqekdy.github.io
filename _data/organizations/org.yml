@@ -1,0 +1,28 @@
+- name: St. Cloud State University, School of Graduate Studies
+  location: St. Cloud, Minnesota, US
+  position:
+    - Graduate Teaching Assistant
+  from: Aug 2019
+  to: May 2021
+  logo_rpath: stcloudstate.png
+  description:
+    - Mentored students regularly, for more than 10 hrs./week on data structures, algorithms, operating systems, programming languages, databases, and helped students debug their code in C++ and Python.
+    - Supervised 13 student teams in a group-project with 76 % completion rate, to create/ manipulate index using B+ trees.
+
+
+- name: IBM India Pvt. Ltd., GBS
+  location: Bangalore, India
+  position:
+    - Associate System Engineer
+    - Data Engineer
+  from: Jan 2017
+  to: April 2019
+  logo_rpath: ibm.png
+  description:
+    - Leveraged Agile methodology and Microservices architectural pattern to develop an end-to-end Watson dashboard application, beating timeline expectation by 7 days for reporting usage statistics using Django.
+    - Developed a script to generate the User Acceptance Test (UAT) report, by coordinating cross-functional requirements from the Testing, Data, and FileNet Team.
+    - Automated bulk user management in LDAP, by developing an API that featured 4 different functionalities.
+    - Generated timesaving of approximately 1 hour for each client, by developing an API to manage content on IBM FileNetP8.
+    - Collaborated with content tooling team to migrate 15 clients from bare metal servers to cloud-based offerings, by administering IBM FileNetP8 suite in IBM Cloud.
+    - Boosted overall productivity of the team by conducting 3 consecutive training sessions on “Programming with Python”.
+    - Implemented cross-platform data integration from IBM DB2 (SQL), and NoSQL database (MongoDB) to facilitate data visualization, resulting in increased readability by more than 50%.
